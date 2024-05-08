@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8181:8181"
+    volumes:
+      - .:/app
+      - ./database:/app/database
+    networks:
+      - laravel
+    environment:
+      - APP_ENV=local
+      - APP_KEY=your_app_key_here
+
+networks:
+  laravel:
+    driver: bridge

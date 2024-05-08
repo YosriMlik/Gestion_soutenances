@@ -1,0 +1,67 @@
+INSERT INTO `salle` (`id`, `nom`, `created_at`, `updated_at`) VALUES
+(1, 'Salle 1', '2023-08-23 19:24:18', '2023-08-23 19:24:18'),
+(2, 'Salle 2', '2023-08-23 19:24:18', '2023-08-23 19:24:18'),
+(3, 'Salle 3', '2023-08-23 19:24:18', '2023-08-23 19:24:18'),
+(4, 'Salle 4', '2023-08-23 19:24:18', '2023-08-23 19:24:18'),
+(5, 'Salle 5', '2023-08-23 19:24:26', '2023-08-23 19:24:26');
+
+
+
+INSERT INTO `specialite` (`id`, `nom`, `created_at`, `updated_at`) VALUES
+(1, 'Licence Génie Industriel', '2023-08-24 07:40:04', '2023-08-24 07:40:04'),
+(2, 'Licence Génie Informatique', '2023-08-24 07:40:46', '2023-08-24 07:40:46'),
+(3, 'Mastére Industrie v4.0', '2023-08-24 07:41:10', '2023-08-24 07:41:10'),
+(4, 'Génie Civil', '2023-08-24 07:41:30', '2023-08-24 07:41:30'),
+(5, 'Génie Procédés', '2023-08-24 07:41:49', '2023-08-24 07:41:49'),
+(6, 'Génie Télécommunication', '2023-08-24 07:42:02', '2023-08-24 07:42:02'),
+(7, 'Génie Industriel', '2023-08-24 07:42:12', '2023-08-24 07:42:12'),
+(8, 'Génie Informatique', '2023-08-24 07:42:22', '2023-08-24 07:42:22'),
+(9, 'Génie Mécanique', '2023-08-24 07:42:31', '2023-08-24 07:42:31');
+
+
+INSERT INTO `etudiant` (`id`, `prenom`, `nom`, `adresse`, `specialite_id`, `soutenance_id`, `created_at`, `updated_at`) VALUES
+(1, 'Yosri', 'Mlik', 'Beliana', 8, NULL, '2023-08-30 11:06:46', '2023-08-31 11:06:46'),
+(2, 'Amin', 'Mlik', 'Beliana', 8, NULL, '2023-08-16 09:26:38', '2023-08-16 09:27:45'),
+(3, 'Sirine', 'Mlik', 'Beliana', 8, NULL, '2023-08-16 09:26:55', '2023-08-16 09:27:45'),
+(4, 'Yassine', 'Mlik', 'Beliana', 8, NULL, '2023-08-16 09:27:10', '2023-08-16 09:27:45'),
+(5, 'Housem', 'Ben rjab', 'Tunis', 8, NULL, '2023-08-16 09:54:40', '2023-08-16 13:34:07'),
+(6, 'Mohamed', 'Ben Ayed', 'Tunis', 8, NULL, '2023-08-16 09:54:40', '2023-08-16 13:34:07'),
+(7, 'Kais', 'Said', 'Tunis', 8, NULL, '2023-08-16 09:54:40', '2023-08-16 13:34:07'),
+(8, 'Yousef', 'Msekni', 'Tunis', 8, NULL, '2023-08-16 09:54:40', '2023-08-16 13:34:07'),
+(9, 'Hannibal', 'Mejbri', 'Tunis', 8, NULL, '2023-08-16 09:54:40', '2023-08-16 13:34:07'),
+(10, 'Hamza', 'Rfiaa', 'Tunis', 8, NULL, '2023-08-16 09:54:40', '2023-08-16 13:34:07'),
+(11, 'Fraj', 'Ben Fraj', 'USA', 8, NULL, '2023-08-16 09:55:10', '2023-08-16 09:56:12');
+
+INSERT INTO `jury` (`id`, `prenom`, `nom`, `mail`, `created_at`, `updated_at`) VALUES
+(1, 'Loussaief', 'Mlik', 'ymlik24@gmail.com', '2023-08-16 08:37:45', '2023-08-16 08:37:45'),
+(2, 'Hanen', 'Ben Ayed', 'hanenbenayed0@gmail.com', '2023-08-16 08:38:10', '2023-08-16 08:38:10'),
+(3, 'Nejib', 'Ayed', 'aminmlik97@gmail.com', '2023-08-16 09:55:37', '2023-08-16 09:55:37'),
+(4, 'Mohamed', 'Zuckerberg', 'medddd@gmail.com', '2023-08-16 09:45:37', '2023-08-16 09:57:37');
+
+
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Yosri', 'ymlik24@gmail.com', '2023-08-24 09:40:37', '$2y$10$kXTtwyGdGS7b6xcraBeN6.U454um7GiIyRti3ESZHI3Ey528HLqg.', NULL, '2023-08-24 09:13:38', '2023-08-24 09:40:37');
+
+INSERT INTO `invite` (`id`, `prenom`, `nom`, `mail`, `created_at`, `updated_at`) VALUES
+(2, 'Lionel', 'Messsi', 'messi@gmail.com', '2023-08-26 12:07:10', '2023-08-26 12:07:10'),
+(3, 'Cristiano', 'Ronaldo', 'ronaldo@gmail.com', '2023-08-26 12:07:28', '2023-08-26 12:07:28'),
+(4, 'Killyan', 'Mbappe', 'mbappe@gmail.com', '2023-08-26 12:08:16', '2023-08-26 12:08:16'),
+(5, 'Erling', 'Haaland', 'haaland@gmail.com', '2023-08-26 12:08:35', '2023-08-26 12:08:35'),
+(6, 'Luka', 'Modric', 'modri@gmail.com', '2023-08-26 14:53:26', '2023-08-26 14:53:26'),
+(7, 'Kevin', 'De Brune', 'debrune@gmail.com', '2023-08-26 14:54:07', '2023-08-26 14:54:07'),
+(8, 'Robert', 'Lewandowski', 'lewandowski@gmail.com', '2023-08-26 14:54:28', '2023-08-26 14:54:28');
+
+
+INSERT INTO `pfe` (`id`, `titre`, `societe`, `specialite_id`, `soutenance_id`, `created_at`, `updated_at`) VALUES
+(1, 'Bookshop', 'Home', 8, NULL, '2023-08-26 18:11:32', '2023-08-26 18:11:32'),
+(2, 'E-Commerce', 'Home', 8, NULL, '2023-08-26 18:11:32', '2023-08-26 18:11:32'),
+(3, 'Getion soutenances', 'Home', 8, NULL, '2023-08-26 18:11:48', '2023-08-26 18:11:48');
+
+
+/*INSERT INTO `soutenance` (`id`, `date`, `heure`, `specialite_id`, `salle_id`, `pfe_id`, `created_at`, `updated_at`) VALUES
+(1, '2023-10-27', '11:39:00', 8, 2, 2, '2023-10-26 08:39:31', '2023-10-26 08:39:31'),
+(2, '2023-11-04', '11:41:00', 8, 4, 3, '2023-10-26 08:41:18', '2023-10-26 08:41:18');
+
+
+UPDATE 'pfe' SET 'soutenance_id' = 1 WHERE 'id'==2;
+UPDATE 'pfe' SET 'soutenance_id' = 2 WHERE 'id'==3;*/
